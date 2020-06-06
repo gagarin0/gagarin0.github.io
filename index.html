@@ -136,7 +136,7 @@
                   websocket = new WebSocket(wsUri);
 	       if (websocket.readyState == WebSocket.OPEN) {
 		    console.log('Connection is successful');
-		}
+		} else {console.log('Fuck');}
                   websocket.onopen = function(evt) { onOpen(evt) };
                   websocket.onclose = function(evt) { onClose(evt) };
                   websocket.onmessage = function(evt) { onMessage(evt) };
