@@ -132,7 +132,7 @@
                }
 					
                function onLoad() {
-                  var wsUri = "ws://127.0.0.1:7777";
+                  var wsUri = "ws://e0598705c76e.ngrok.io:10000/";
                   websocket = new WebSocket(wsUri);
                   websocket.onopen = function(evt) { onOpen(evt) };
                   websocket.onclose = function(evt) { onClose(evt) };
